@@ -1,0 +1,175 @@
+/* Root Variables */
+:root {
+    --bg-light: #f5f7fb;
+    --bg-dark: #1f2937;
+    --card-light: #ffffff;
+    --card-dark: #374151;
+    --text-light: #1f2937;
+    --text-dark: #f9fafb;
+    --primary: #2563eb;
+    --secondary: #10b981;
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif;
+  }
+  
+  body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Theme Toggle Button */
+  #toggle-theme {
+    background: white;
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #toggle-theme:hover {
+    background: #e0e7ff;
+  }
+  
+  /* Metric Cards */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+  
+  .card {
+    background: var(--card-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    padding: 1rem;
+    text-align: center;
+    width: 180px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  body.dark-mode .card {
+    background: var(--card-dark);
+    color: var(--text-dark);
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+  
+  .card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary);
+  }
+  
+  /* Charts Section */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .chart-box {
+     background: var(--card-light);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px #00000014;
+    transition: background 0.3s ease, color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+  }
+  
+  .chart-box canvas {
+      width: 100% !important;
+      height: 100% !important;
+      max-height: 400px;
+  }
+  
+  body.dark-mode .chart-box {
+    background: var(--card-dark);
+    color: var(--text-dark);
+  }
+  
+  .chart-box h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  /* Last Updated Section */
+  .updated {
+    text-align: center;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .updated p{
+    font-family: "Oswald", sans-serif;
+    color: var(--bg-dark);
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #fe6219;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  body.dark-mode footer {
+    background: #111827;
+    color: #ccc;
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .charts-grid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .chart-box {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-box {
+      height: 200px;
+    }
+  }

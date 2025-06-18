@@ -1,0 +1,68 @@
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.mentor{
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.team {
+  padding: 2rem 0;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: #ccf7ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  background: #38ff7479;
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+.card p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Special style for mentor */
+.mentor {
+  border: 2px solid #6c63ff;
+  background: #f0f1ff;
+}
+
+.Team_heading{
+  max-width: fit-content;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: blue;
+  border-bottom: 2px solid purple;
+}

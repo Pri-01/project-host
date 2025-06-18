@@ -1,0 +1,215 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweetsankat - Disaster Resource Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Axios for API requests -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader-container">
+      <div id="lottie-loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="nav_wrapper">
+          <a href="#" class="nav-link">
+            <img
+              src="images/logo1-removebg-preview.png"
+              alt="Logo"
+              width="150"
+              height="100"
+              class="site_logo"
+            />
+          </a>
+          <img
+            src="images/text_logo.jpg"
+            alt="logo"
+            width="435"
+            class="txt-logo"
+          />
+          <!-- call to action -->
+          <ul class="nav_list cta">
+            <li><a href="#" class="nav_link btn">Home</a></li>
+            <li>
+              <a href="model_metrics.html" class="nav_link btn"
+                >Model Metrics</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="area">
+        <div class="container">
+          <div class="section_wrapper">
+            <div class="tweet-list-wrapper">
+              <h3 class="item-head">Live tweets</h3>
+              <div class="tweet-list"></div>
+            </div>
+
+            <div class="affect-wrapper">
+              <h3 class="item-head">Categorized Map View</h3>
+              <div class="map-item">
+                <div class="map" id="map"></div>
+                <div class="spin-item">
+
+                  <!-- Lottie Loader -->
+                  <div
+                    id="default-loader"
+                  ></div>
+
+                  <div
+                    id="fetch-loader"
+                    
+                  ></div>
+
+                  <div class="btn-wrapper">
+                  <button id="fetch-tweets-btn" class="fetch-btn btn">
+                    Fetch Latest Tweets
+                  </button>
+                  <button id="clear-btn" class="clear-btn btn">Clear</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="item-head">Predicted Table View</h3>
+            <div class="structured-list">
+              <div class="structured-block need">
+                <div class="category-location">
+                  <i
+                    class="fa-solid fa-caret-down status-icon status-critical"
+                  ></i>
+                  Needed Resources
+                </div>
+                <div id="need-list" class="resource-list"></div>
+              </div>
+              <div class="structured-block available">
+                <div class="category-location">
+                  <i class="fa-solid fa-caret-up status-icon status-active"></i>
+                  Available Resources
+                </div>
+                <div id="available-list" class="resource-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <img src="images/logo.jpg" alt="TweetSankat Logo" />
+      <div class="footerDiv">
+        <div class="container">
+          <section class="footerCon">
+            <div class="footerHead">
+              <h3 class="item-head">Support & Resilience</h3>
+              <ul>
+                <h4 class="item-head">About Us</h4>
+                <li class="footer__about">
+                  <p>
+                    TweetSankat is an initiative to empower communities with
+                    real-time disaster alerts, verified resource matching, and
+                    actionable insights derived from social media signals.
+                  </p>
+                </li>
+              </ul>
+
+              <ul class="footer-link">
+                <li>
+                  <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerItem">
+              <h4 class="item-head">Contact Us</h4>
+              <ul class="contact">
+                <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+                <li>
+                  <a href="mailto:support@tweetsankat.org"
+                    >support@tweetsankat.org</a
+                  >
+                </li>
+              </ul>
+              <a href="./team.html" class="btn footer_btn">See Our Team</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="footerbg"></div>
+    </footer>
+
+    <div class="copyright container">
+      <p>&copy; 2025 TweetSankat. Empowering Relief Through Information.</p>
+      <p>All Rights Reserved</p>
+    </div>
+  </body>
+
+  <script src="assets/map.js"></script>
+  <script src="assets/script2.js"></script>
+  <script>
+    document.body.classList.add("loading");
+
+    // Load the Lottie animation
+    const animation = lottie.loadAnimation({
+      container: document.getElementById("lottie-loader"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "./assets/first.json",
+    });
+
+    // After 3 seconds, remove the loader and show the app
+    setTimeout(() => {
+      document.getElementById("loader-container").style.display = "none";
+      document.body.classList.remove("loading");
+    }, 3600);
+  </script>
+  <script>
+    const defaultAnimation = lottie.loadAnimation({
+      container: document.getElementById("default-loader"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/Frontend/assets/default_loader.json", // your default loader
+    });
+  </script>
+</html>

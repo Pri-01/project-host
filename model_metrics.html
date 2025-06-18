@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TweetSankat - Model Metrics Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav_wrapper">
+          <a href="#" class="nav-link">
+            <img
+              src="images/logo1-removebg-preview.png"
+              alt="Logo"
+              width="150"
+              height="100"
+              class="site_logo"
+            />
+          </a>
+          <img
+            src="images/text_logo.jpg"
+            alt="logo"
+            width="435"
+            class="txt-logo"
+          />
+          <!-- call to action -->
+          <ul class="nav_list cta">
+            <li><a href="index.html" class="nav_link btn">Home</a></li>
+            <li>
+              <a href="model_metrics.html" class="nav_link btn"
+                >Model Metrics</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="cards-container container">
+      <div class="card">
+        <h3>Accuracy</h3>
+        <p id="accuracy">--%</p>
+      </div>
+      <div class="card">
+        <h3>Precision</h3>
+        <p id="precision">--%</p>
+      </div>
+      <div class="card">
+        <h3>Recall</h3>
+        <p id="recall">--%</p>
+      </div>
+      <div class="card">
+        <h3>F1 Score</h3>
+        <p id="f1">--%</p>
+      </div>
+    </section>
+
+    <div class="updated">
+      <p>Last updated: <span id="last-updated">--</span></p>
+    </div>
+
+    <section class="charts-grid">
+      <div class="chart-box">
+        <h4>Performance Trend</h4>
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <h4>Metric Breakdown</h4>
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <h4>Class Distribution</h4>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </section>
+
+    <footer>
+      <img src="images/logo.jpg" alt="TweetSankat Logo" />
+      <div class="footerDiv">
+        <div class="container">
+          <section class="footerCon">
+            <div class="footerHead">
+              <h3 class="item-head">Support & Resilience</h3>
+              <ul>
+                <h4 class="item-head">About Us</h4>
+                <li class="footer__about">
+                  <p>
+                    TweetSankat is an initiative to empower communities with
+                    real-time disaster alerts, verified resource matching, and
+                    actionable insights derived from social media signals.
+                  </p>
+                </li>
+              </ul>
+
+              <ul class="footer-link">
+                <li>
+                  <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerItem">
+              <h4 class="item-head">Contact Us</h4>
+              <ul class="contact">
+                <li><a href="tel:+919999999999">+91 99999 99999</a></li>
+                <li>
+                  <a href="mailto:support@tweetsankat.org"
+                    >support@tweetsankat.org</a
+                  >
+                </li>
+              </ul>
+              <a href="./team.html" class="btn footer_btn">See Our Team</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="footerbg"></div>
+    </footer>
+
+    <div class="copyright container">
+      <p>&copy; 2025 TweetSankat. Empowering Relief Through Information.</p>
+      <p>All Rights Reserved</p>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>

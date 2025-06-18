@@ -1,0 +1,425 @@
+
+[
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 1,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of clean drinking water, of ORS packets",
+                "foodItems": [],
+                "locations": [
+                    "Guwahati",
+                    "Assam"
+                ],
+                "medicines": [
+                    "ORS"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Urgent: Need clean drinking water and ORS packets in Guwahati, Assam. #FloodRelief"
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of blankets 50",
+                "foodItems": [],
+                "locations": [
+                    "Cuttack",
+                    "Odisha"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "We have 50 blankets available at our relief center in Cuttack, Odisha. DM for coordination."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of baby food, of diapers",
+                "foodItems": [
+                    "baby food"
+                ],
+                "locations": [
+                    "Silchar"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Need baby food and diapers in Silchar. Many families with infants are stranded. #AssamFloods"
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 1,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of first aid kits, of antibiotics",
+                "foodItems": [],
+                "locations": [
+                    "Patna",
+                    "Bihar"
+                ],
+                "medicines": [
+                    "antibiotics",
+                    "first aid kits"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "Medical team available with basic first aid kits and antibiotics in Patna, Bihar. Can travel."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of sanitary pads, of hygiene kits",
+                "foodItems": [],
+                "locations": [
+                    "Howrah",
+                    "West Bengal"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Any help with sanitary pads and hygiene kits in Howrah, West Bengal? Supplies running low."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of rice, of dal, of salt",
+                "foodItems": [
+                    "rice",
+                    "dal",
+                    "salt"
+                ],
+                "locations": [
+                    "Ranchi"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "We’ve stocked rice, dal, and salt in our community kitchen in Ranchi. Please spread the word."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of glucose packets, of energy bars",
+                "foodItems": [
+                    "glucose packets",
+                    "energy bars"
+                ],
+                "locations": [
+                    "Malda district"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Badly need glucose packets and energy bars for stranded people in Malda district."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of cooked meals",
+                "foodItems": [
+                    "cooked meals"
+                ],
+                "locations": [
+                    "Bhubaneswar Railway Station"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "Free cooked meals available from 12–3 PM near Bhubaneswar Railway Station."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of volunteers, of stretchers",
+                "foodItems": [],
+                "locations": [
+                    "Darbhanga"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Urgent need for volunteers and stretchers in Darbhanga to help elderly flood victims."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 1,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of drinking water 200 bottles, of ORS",
+                "foodItems": [],
+                "locations": [
+                    "Dibrugarh"
+                ],
+                "medicines": [
+                    "ORS"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "We’ve arranged 200 bottles of drinking water and ORS in Dibrugarh. Please come to collect."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of power banks, of torches",
+                "foodItems": [],
+                "locations": [
+                    "Barpeta"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Need power banks and torches in flooded areas of Barpeta. No electricity for 2 days."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 1,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of antiseptics, of bandages, of basic meds",
+                "foodItems": [],
+                "locations": [
+                    "Dhanbad"
+                ],
+                "medicines": [
+                    "antiseptics",
+                    "bandages",
+                    "basic meds"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "NGO in Dhanbad has stock of antiseptics, bandages, and basic meds. Contact if needed."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of mosquito nets, of repellent",
+                "foodItems": [],
+                "locations": [
+                    "Jalpaiguri"
+                ],
+                "medicines": [
+                    "repellent"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Desperately looking for mosquito nets and repellent in Jalpaiguri. Kids getting sick."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of raincoats, of plastic sheets",
+                "foodItems": [],
+                "locations": [
+                    "Purnia",
+                    "Shastri Nagar school"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "We’re distributing raincoats and plastic sheets in Purnia. Come by Shastri Nagar school."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 1,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of insulin, of blood pressure medicines",
+                "foodItems": [],
+                "locations": [
+                    "Muzaffarpur"
+                ],
+                "medicines": [
+                    "insulin",
+                    "blood pressure medicines"
+                ]
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Need insulin and blood pressure medicines urgently in Muzaffarpur. Patient stranded."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of shelter space for 20 people, of food, of water",
+                "foodItems": [
+                    "food",
+                    "water"
+                ],
+                "locations": [
+                    "Balasore"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 1,
+            "type": "available"
+        },
+        "tweet": "Offering shelter space for 20 people in Balasore. Basic food and water available."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of pet food",
+                "foodItems": [
+                    "pet food"
+                ],
+                "locations": [
+                    "Gaya"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Is anyone supplying pet food in Gaya? Strays and rescued pets need help too."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of Baby formula, of sanitary napkins, of water",
+                "foodItems": [
+                    "Baby formula",
+                    "water"
+                ],
+                "locations": [
+                    "Nalbari town hall"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 1,
+            "type": "available"
+        },
+        "tweet": "Available: Baby formula, sanitary napkins, and water at shelter near Nalbari town hall."
+    },
+    {
+        "predictions": {
+            "foodRequirement": 0,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of life jackets, of ropes",
+                "foodItems": [],
+                "locations": [
+                    "Goalpara"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "need"
+        },
+        "tweet": "Please send life jackets and ropes to flood-hit areas of Goalpara. Emergency!"
+    },
+    {
+        "predictions": {
+            "foodRequirement": 1,
+            "locationIdentified": 1,
+            "medicineRequirement": 0,
+            "nerInformation": {
+                "diseases": [],
+                "entities": "of phone charging, of warm meals",
+                "foodItems": [
+                    "warm meals"
+                ],
+                "locations": [
+                    "Midnapore"
+                ],
+                "medicines": []
+            },
+            "shelterRequired": 0,
+            "type": "available"
+        },
+        "tweet": "We are offering free phone charging and warm meals in Midnapore. Just walk in."
+    }
+]
